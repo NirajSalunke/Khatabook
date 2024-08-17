@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanna Delete</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="w-screen bg-black text-white font-mono">
+    <nav class="w-screen h-[10vh] flex justify-center items-center">
+      <div class="w-11/12 px-5 flex justify-between items-center h-full">
+        <!-- <img class="h-3/4" src="../assets/logoKhata.png" alt="image" /> -->
+        <h1 class="text-5xl" style="font-family: 'Bayon', sans-serif">KB</h1>
+        <div>
+          <ul class="flex gap-5">
+            <a href="/"
+              ><li
+                class="hover:bg-white hover:text-black transition-all duration-300 hover:scale-105 border p-3 bg-black rounded-xl hover:shadow-none"
+              >
+                Home
+              </li></a
+            >
+            <a href="/create"
+              ><li
+                class="hover:bg-white hover:text-black transition-all duration-300 hover:scale-105 border p-3 bg-black rounded-xl hover:shadow-none"
+              >
+                Create Khata
+              </li></a
+            >
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <form method="post" class="w-3/4 h-[90vh] flex gap-4 flex-col px-10">
+      <!-- <label class="px-2">Edit your Khata here! </label> -->
+      <!-- <input type="textarea" name="text" id="" /> -->
+      <label class="px-2 text-2xl"> Wanna Delete Khata for <%=fileN%>?</label>
+      <input
+        type="submit"
+        value="Yes For sure!"
+        class="border p-2 flex justify-center rounded-xl hover:bg-white hover:text-black transition-all duration-300 hover:scale-105 border p-3 bg-black rounded-xl hover:shadow-none items-center"
+      />
+    </form>
+  </body>
+</html>
