@@ -77,13 +77,8 @@ app.post("/edit/:fileName", (req, res) => {
 });
 
 app.get("/delete/:fileName", (req, res) => {
-  // res.send(req.params.fileName);
   const fileName = req.params.fileName;
-  // fileName.slice(0, 4);
-  // const data = fileName.slice(0, fileName.length - 4);
-  // console.log(data);
   res.render("delete", { fileN: fileName });
-  // res.send(data);
 });
 
 app.post("/delete/:fileName", (req, res) => {
